@@ -1,0 +1,27 @@
+0. Which of the following sorting algorithms are (or can be made) stable?
+   (a) mergesort
+   (b) quicksort with the first element as pivot
+   (c) quicksort with randomized pivot
+   (d) selection sort
+   (e) insertion sort
+   (f) heap sort --- not covered yet
+
+(a), (b), (e) are stable. (c),(d),(f) are unstable.
+
+
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+1 hours for merge sort and inversions. 1 hours for longest
+2. Would you rate it as easy, moderate, or difficult?
+It is easy
+3. Did you work on it mostly alone, or mostly with other people?
+   Note you are encouraged to discuss with your classmates, 
+   but each students should submit his/her own code.
+I worked alone
+4. How deeply do you feel you understand the material it covers (0%-100%)? 
+100%
+5. Any other comments?
+The time consumption of submission is different when I submitted same code for several time. I think that is because part of time consumption based on computer state(busy or not). It is longest, not the random-sort
+I think that testing the submission five times, and average the time is a idea.

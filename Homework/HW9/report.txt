@@ -1,0 +1,23 @@
+1. Dijkstra                                           
+heapdict: TC:O((V+E)logV), SC:O(V+E)
+hash: TC:O(V^2+E), SC:O(V+E)
+heap: TC:O((V+E)logE), SC:O(V+E)
+
+2. TSP
+TC: 2^n*n
+SC: 2^n*n
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+10 hours
+2. Would you rate it as easy, moderate, or difficult?
+More then moderate
+3. Did you work on it mostly alone, or mostly with other people?
+Alone
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+100%
+5. Which part(s) of the course you like the most so far?
+Coding
+6. Which part(s) of the course you dislike the most so far?
+Like it

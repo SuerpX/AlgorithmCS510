@@ -1,0 +1,28 @@
+1.Q: What's the best-case, worst-case, and average-case time complexities? Briefly explain.
+The operations implemented of the best-case of quick select is O(n). We assume that we would like to find the ith smallest number. So, when the pivot is the ith smallest number that you would like to find, it is the best case. When all of the smaller will be moved to the left of pivot, we can know that. In this case, we can just scan all of elements one time. So, the time complexities of n number is O(n).
+
+The operations implemented of the worst-case of quick select is O(n * n). In this case, if every time you divide the array, the side that includes the number you want to find is n - 1. For example, you would like to find the smallest number in the array, but every time the pivot is the biggest number. So, the computer should scan n + (n - 1) + (n - 2) …… + 2 + 1 times. Thus, the time complexities is O(n * n)
+
+The operations implemented of the average-case of quick select is O(n). In this case, every time we select a number as pivot, we keep a half of it to enter next recursion. So, 
+T(N) = n + 1/2n + 1/4n ... + 2 + 1 = n * (1 + 1/2 + 1/4 + .. + 1/n) = 2n
+Thus, the time complexities is O(n).
+
+2. Q: What are the time complexities for the operations implemented?
+The operations implemented of the sorted(t) is O(n)
+The operations implemented of the search(t) is O(log(n))
+The operations implemented of the insert(t) is O(log(n))
+
+1. Approximately how many hours did you spend on this assignment?
+3 hours. One hour for select, One hour for qsort, and one hour for report
+
+2. Would you rate it as easy, moderate, or difficult?
+More than easy, less than moderate. 
+
+3. Did you work on it mostly alone, or mostly with other people?
+I worked alone.
+
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+95%
+
+5. Any other comments?
+No. Thank you.

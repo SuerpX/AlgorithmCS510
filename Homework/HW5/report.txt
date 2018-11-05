@@ -1,0 +1,27 @@
+0. Is Fibonacci REALLY O(n)?
+No. For the running time, yes. But the f(n) itself grows exponentially, the space complexity for storing number is growing exponentially.
+
+1. What's the complexity?
+The time complexity is O(n), because using DP to remember which f(n) we have calculate, every number can just be scanned one time.
+
+2. What's the complexity of this DP?
+It is O(n * n). Because although every f(n) are calculate one time, but in every f(n), it should take (n - 1) times to get the f(n) before it, and plus them together. Thus, there is n * (n - 1), which is O(n * n)
+
+What's the name of this famous number series?
+Catalan numbers
+
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+3 hours
+2. Would you rate it as easy, moderate, or difficult?
+More than easy, less than moderate
+3. Did you work on it mostly alone, or mostly with other people?
+Alone
+4. How deeply do you feel you understand the material it covers (0%-100%)? 
+100%
+5. Which part(s) of the course you like the most so far?
+Programming
+6. Which part(s) of the course you dislike the most so far?
+None

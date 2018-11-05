@@ -1,0 +1,16 @@
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+two hours
+2. Would you rate it as easy, moderate, or difficult?
+It is moderate
+3. Did you work on it mostly alone, or mostly with other people?
+   Note you are encouraged to discuss with your classmates, 
+   but each students should submit his/her own code.
+Worked alone
+4. How deeply do you feel you understand the material it covers (0%-100%)? 
+100%
+5. Which part(s) of the course you like the most so far?
+Clever algorithm of others (including the algorithmn from book)
+6. Which part(s) of the course you dislike the most so far?
+None

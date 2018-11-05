@@ -1,0 +1,51 @@
+
+0. For each of the coding problems below:
+   (a) Describe an exhaustive solution, and analyze compleixty (might be exponential).
+
+For first one: keep trying to change the items in the bag
+	time:(2 ^ n)
+	space:(2 ^ n)
+For second one: keep trying to change the items in the bag utile the copy of item is 0:
+	time:O(min(W/w,c)^n)
+	space:O(min(W/w,c)^n)
+   (b) Describe a greedy solution, and analyze complexity.
+For first one:keep getting the smallest number of v[i]/w[i] of items
+For second one: keep getting the smallest number of v[i]/w[i] of items utile the copy of item is 0:
+   (c) Show a counterexample to the greedy solution.
+For first one:
+Greedy(3, [(1, 2), (2, 5)])-------(5,[0,1])
+Best(3, [(1, 2), (2, 5)])------ (7, [1, 1])
+For second one: 
+Greedy(3, [(1, 2,1), (2, 5,2)])-------(5,[0,1])
+Best(3, [(1, 2), (2, 5)])------ (7, [1, 1])
+
+   (d) Theoretically, is the top-down solution faster, or the bottom-one one faster?
+For both of them: top-down will be faster
+   (e) Empirically, which one is faster? (Try some long random lists) 
+For first one:
+    top down:        10 loops, 22.1 ms per loop
+    bottom up:       10 loops, 11.3 ms per loop
+For second one:
+    top down:        10 loops, 154 ms per loop
+    bottom up:       10 loops, 86.6 ms per loop
+1.Q: What are the time and space complexities?
+Time: O(nW)
+Space: O(W)
+2.Q: What are the time and space complexities?
+Time:O(W * ∑{log(ci)})
+Space:O(W * ∑{ci})
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+8 hours
+2. Would you rate it as easy, moderate, or difficult?
+A little bit difficult
+3. Did you work on it mostly alone, or mostly with other people?
+Yes
+4. How deeply do you feel you understand the material it covers (0%-100%)? 
+100%
+5. Which part(s) of the course you like the most so far?
+Coding
+6. Which part(s) of the course you dislike the most so far?
+No

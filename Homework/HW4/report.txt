@@ -1,0 +1,102 @@
+0. There are two methods for building a heap from an unsorted array:
+   (1) insert each element into the heap  --- O(nlogn)
+   (2) heapify (top-down)                 --- O(n)
+
+   (a) Derive these time complexities.
+	For the first method, inserting a number is putting it in the tail of heap, and go all the ways up. Thus half of them move log(n), quarter of them move log(n-1). Therefor, the time complexities is O(nlogn)
+	For the second method, if the top element break this heap, it goes all the way down to the bottom, which is log(n), and two of them goes all the way down, which is log(n-1). 1/2 + 2/4 + 3/8 + ... = (1/2 + 1/4 + 1/8 + ...) + (0 + 1/4 + 2/8 + 3/16 + ...) = 1 + (1/4 + 1/8 + 1/16 + ...) + (1/8 + 2/16 + 3/32 + ...) = 1 + 1/2 + ... = 2.Thus, the time complexities is O(n)
+   (b) Use a long list of random numbers to show the difference in time. (Hint: random.shuffle)
+	
+from random import *
+from heapq import *
+from timeit import *
+from time import *
+
+s = process_time()
+for i in range(0,100):
+    r = list(range(0,50000))
+    shuffle(r)
+    h = []
+    for j in r:
+        heappush(h,j)
+
+c = process_time() - s
+print(c)
+
+s = process_time()
+for i in range(0,100):
+    r = list(range(0,50000))
+    shuffle(r)
+    heapify(r)
+
+c = process_time() - s
+print(c)
+
+For the first method, the time is 4.965928000000002. For the second one is 4.223244
+
+   (c) What about sorted or reversely-sorted numbers?
+	using the code in (b) to test the sorted or reversely-sorted numbers.
+For the sorted number, the first method cost 0.91158; the second method cost 0.264061
+For the reversely-sorted numbers,the first method cost 0.262972; the second method cost 0.842645
+
+1.Q: What are the time complexities of these algorithms? 
+The first one is O(n^2logn)
+The second one is O(n^2)
+The third one is O(nlogn)
+
+2.Q: What is the complexity? Write down the detailed analysis in report.txt.
+Dividing a list to k part, the level will be log(k)n. The heapmerge cost O(nlogk). Thus, the time complexity is O(nlogk * logk(n)). It is O(nlogn)
+
+3. Q: What is your complexity? Write down the detailed analysis in report.txt.
+
+pushing and replacing a element cost O(log(k)). There are n elements. Thus, the  time complexity is O(nlog(k))
+
+5. (optional) Summarize the time complexities of the basic operations (push, pop-min, peak, heapify)
+   for these implementations of priority queue:
+Push:
+   unsorted array: O(1)
+   sorted array (highest priority first),:O(n)
+   sorted array (lowest priority first),:O(n)
+   linked list(sorted),O(n)
+   binary heap:O(logn)
+pop-min:
+   unsorted array: O(n)
+   sorted array (highest priority first),:O(n)
+   sorted array (lowest priority first),:O(1)
+   linked list(sorted),O(1)
+   binary heap:O(logn)
+peak:
+   unsorted array: O(n)
+   sorted array (highest priority first),:O(1)
+   sorted array (lowest priority first),:O(1)
+   linked list(sorted),O(1)
+   binary heap:O(1)
+heapify:
+   unsorted array: O(1)
+   sorted array (highest priority first),:O(nlogn)
+   sorted array (lowest priority first),:O(nlogn)
+   linked list(sorted),O(nlogn)
+   binary heap:O(n)
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+8 hours
+2. Would you rate it as easy, moderate, or difficult?
+Difficult
+3. Did you work on it mostly alone, or mostly with other people?
+   Note you are encouraged to discuss with your classmates, 
+   but each students should submit his/her own code.
+Sometime work alone, sometime work with my friend
+4. How deeply do you feel you understand the material it covers (0%-100%)? 
+95%
+5. Which part(s) of the course you like the most so far?
+New thinking
+6. Which part(s) of the course you dislike the most so far?
+No
+
+
+
+
+
+

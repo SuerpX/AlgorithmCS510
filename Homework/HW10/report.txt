@@ -1,0 +1,29 @@
+1. Time complexity is O(n^3)
+   Space Complexity is O(n^2)
+   For this question, I implement this first way Pro.Liang talk on the class, which pair the first element and the last element, if they pair, then solved sub problem which is opt[first + 1][last - 1] and plus 1., comparing with the second subproblem which is opt[first,k][k,last]
+
+2. Time complexity is aslo O(n^3)
+   Space complexity is O(n^2)
+   This time I implement the second way Pro.Liang talk on the class because the using the first way will over counting. The way is take the first element to pair with others, if pair then solved subProblems which are opt[first, k -1] and opt[k, last],and first one times second one. Also, considering the condition that is the first one no pairing with others, the sub problem is opt[first + 1, last]
+
+3. Time complexity: O(n^3 + n^2 * klongn) 
+   Space complexity: O(n^2 * k)
+   This question is the most difficult question no this class. Actually, I did several versions for this one, I just submit three of them. Be honestly, did several versions is not because I want.., because I can not pass all the test cases, so keep improving. All of them using the same way of second question.
+   The first version I submitted is to sorted every subproblem, and put all of the elements into the matrixes. After that, using heap push and heap pop to select first K elements. It is slow, because sorted and reversed because we should sorted big to small, also heapify and push and pop after find all elements.
+   The second version I submitted that the big framework is 'nbest', assume that we got all of the element, do it. When every time it need a new element we call the subproblem to give it. After taking K, finished. The reason why the second one is slower than third one is using opt[rna[start:end]] a lot of time, it takes longer time than subrna = rna[start: end] and using opt[subrna] below. That is the third one's different from second one.
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+20 hours
+2. Would you rate it as easy, moderate, or difficult?
+Difficult, analyzing time complexity and space complexity are more difficult.
+3. Did you work on it mostly alone, or mostly with other people?
+Along, and searching on Internet to get help
+4. How deeply do you feel you understand the material it covers (0%–100%)?
+100% 
+5. Which part(s) of the course you like the most so far?
+Coding
+6. Which part(s) of the course you dislike the most so far?
+no
+    

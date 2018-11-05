@@ -1,0 +1,35 @@
+0. (a) Describe a greedy algorithm for LIS and show a counter example.
+    If the next letter is bigger than current one, adding to the result.
+    For example, str = 'aebbcg', the result is 'aeg'
+   (b) Describe an exhaustive algorithm for TSP and analyze complexity.
+    For exhaustive algorithm, there are V! Case, O(V!) Every time generate a result, you should verify it, O(V + E)
+    The time complexity is O((V+E)*(V!))
+    The space complexity is O(V + E), you do not have to store each of them
+    
+1. Q: What are the time and space complexities?
+Let the length of the str is n.
+The time complexity is O(nlog(n))
+The space complexity is O(n)
+2.   
+   (a) did you realize that bottom-up implementations of DP use (implicit) topological orderings?
+       e.g., what is the topological ordering in your (or my) bottom-up bounded knapsack code?
+There will be a matrix which is showed in class. The topological oder is to scan line from top to bottom, and for each line, left to right.
+   (b) what about top-down implementations? what order do they use to traverse the graph?
+Also there is matrix, but start from right-bottommost to left-top conner, starting from the final problem back to subproblem
+   (c) does that suggest there is a top-down solution for topological sort as well? 
+   Yes for sure. There is top-down solution in my topological.py
+
+0. What's your name?
+Zhengxian Lin
+1. Approximately how many hours did you spend on this assignment?
+4 hours
+2. Would you rate it as easy, moderate, or difficult?
+Moderate
+3. Did you work on it mostly alone, or mostly with other people?
+Along
+4. How deeply do you feel you understand the material it covers (0%–100%)? 
+100%
+5. Which part(s) of the course you like the most so far?
+Coding
+6. Which part(s) of the course you dislike the most so far?
+No
